@@ -27,7 +27,7 @@ public class StudentRepository {
     {
 
         if(!db.containsKey(id)){
-            return "Invalid Id";
+            return null;
         }
         db.get(id).setAge(age);
         return "Student Updated";
