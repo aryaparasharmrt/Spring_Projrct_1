@@ -29,7 +29,7 @@ public class StudentController {
     }
 
     @PutMapping("/update_student")
-    public ResponseEntity<> updateStudent(@RequestParam("id") int id, @RequestParam("age") int age)
+    public ResponseEntity updateStudent(@RequestParam("id") int id, @RequestParam("age") int age)
     {
         String response = studentService.updateStudent(id,age);
         if(response == null){
